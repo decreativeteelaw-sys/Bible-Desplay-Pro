@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bible Display Pro — Controller</title><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/fonts.css">
+</head>
+<body class="controller">
+<header class="topbar"><div class="brandmark">✦</div><div><h1>Bible Display <span>Pro</span></h1><p>Offline scripture presentation</p></div><div class="connection"><i id="connectionDot"></i><span id="connectionText">Connecting…</span></div></header>
+<main class="layout">
+<section class="panel search-panel">
+<div class="section-head search-head"><div class="search-title-actions"><div><p class="eyebrow">SCRIPTURE LIBRARY</p><h2>Find a passage</h2></div><button id="goLive" class="btn btn-live quick-live">● GO LIVE</button></div><span id="bibleStatus" class="pill">Loading Bible…</span></div>
+<div class="search-row"><input id="search" placeholder="Search words or reference (e.g. John 3:16)" autocomplete="off"><button id="searchBtn" class="btn btn-primary">Search</button></div>
+<div class="reference-grid">
+<label>Book<select id="bookSelect"></select></label><label>Chapter<select id="chapterSelect"></select></label>
+<label>Start verse<select id="startVerse"></select></label><label>End verse<select id="endVerse"></select></label>
+</div>
+<div class="button-row"><button id="loadReference" class="btn btn-secondary">Load passage</button><button id="prevVerse" class="btn btn-ghost">← Previous</button><button id="nextVerse" class="btn btn-ghost">Next →</button></div>
+<div id="searchResults" class="results"></div>
+<div class="passage-card"><div class="passage-label">SELECTED PASSAGE</div><div id="selectedReference" class="reference">Genesis 1:1</div><div id="selectedText" class="passage-text">Loading scripture database…</div><div class="button-row"><button id="copyText" class="btn btn-ghost">Copy text</button><button id="favoriteBtn" class="btn btn-ghost">☆ Favorite</button></div></div>
+</section>
+<section class="panel live-panel">
+<div class="section-head"><div><p class="eyebrow">ON-AIR CONTROL</p><h2>Preview & output</h2></div><span class="pill pill-green">Local only</span></div>
+<div class="preview-frame"><div class="preview-inner" id="previewInner"><div id="previewRef" class="preview-ref">GENESIS 1:1</div><div id="previewText" class="preview-text">In the beginning God created the heaven and the earth.</div></div><div class="preview-tag">PREVIEW</div></div>
+<div class="button-row live-actions"><button id="clearLive" class="btn btn-danger">CLEAR OUTPUT</button></div>
+<div class="queue-block"><div class="section-head compact"><h3>Scripture queue</h3><button id="addQueue" class="btn btn-small btn-secondary">+ Add selected</button></div><div id="queueList" class="queue-list"><p class="muted">Queue is empty. Add passages to prepare the next scripture.</p></div></div>
+<div class="button-row"><button id="queuePrev" class="btn btn-ghost">← Queue previous</button><button id="queueNext" class="btn btn-ghost">Queue next →</button></div>
+</section>
+<section class="panel style-panel">
+<div class="section-head"><div><p class="eyebrow">LOOK & FEEL</p><h2>Display styling</h2></div><button id="resetStyle" class="btn btn-small btn-ghost">Reset</button></div>
+<div class="style-grid">
+<label>Font family<select id="fontFamily">
+<option>Georgia</option><option>Arial</option><option>Verdana</option><option>Tahoma</option><option>Trebuchet MS</option><option>Times New Roman</option><option>Impact</option>
+<option>Arial Rounded MT Bold</option><option>Comic Sans MS</option><option>Script MT Bold</option><option>Anton</option><option>Roboto</option><option>Open Sans</option><option>Lato</option><option>Montserrat</option><option>Poppins</option><option>Oswald</option><option>Bebas Neue</option><option>League Spartan</option><option>Playfair Display</option><option>Merriweather</option><option>Lobster</option><option>Pacifico</option><option>Dancing Script</option><option>Cinzel</option><option>Nunito</option><option>Raleway</option><option>Inter</option><option>Source Sans 3</option><option>Quicksand</option></select></label>
+<label>Font size <output id="fontSizeOut">48 px</output><input id="fontSize" type="range" min="22" max="100" value="48"></label>
+<label>Font weight<select id="fontWeight"><option value="400">Regular</option><option value="600">Semi-bold</option><option value="700">Bold</option><option value="800">Extra bold</option></select></label>
+<label>Text alignment<select id="textAlign"><option>center</option><option>left</option><option>right</option></select></label>
+<label>Text color<input id="textColor" type="color" value="#ffffff"></label>
+<label>Reference color<input id="refColor" type="color" value="#f5c76b"></label>
+<label>Output background <output id="opacityOut">Always transparent</output><input id="opacity" type="range" min="0" max="0" value="0" disabled hidden></label>
+<label>Line spacing <output id="lineOut">1.35</output><input id="lineSpacing" type="range" min="100" max="200" value="135"></label>
+<label>Letter spacing <output id="letterOut">0 px</output><input id="letterSpacing" type="range" min="-1" max="5" value="0" step="0.5"></label>
+<label>Text shadow<select id="shadow"><option value="strong">Strong</option><option value="soft">Soft</option><option value="none">None</option></select></label>
+<label>Outline<select id="outline"><option value="none">None</option><option value="dark">Dark outline</option></select></label>
+<label>Vertical alignment<select id="verticalAlign"><option value="center">Center</option><option value="top">Top</option><option value="bottom">Bottom</option></select></label>
+<label>Display width <output id="widthOut">90%</output><input id="displayWidth" type="range" min="40" max="100" value="90"></label>
+<label>Padding <output id="paddingOut">40 px</output><input id="padding" type="range" min="0" max="120" value="40"></label>
+<label class="check-label"><input type="checkbox" id="showReference" checked> Show scripture reference</label>
+<label class="check-label"><input type="checkbox" id="showNumbers" checked> Show verse numbers</label>
+<label class="check-label"><input type="checkbox" id="autoFit" checked> Automatically fit text</label>
+<label class="check-label"><input type="checkbox" id="fade"> Fade transition</label>
+</div>
+<div class="preset-row"><label>Preset name<input id="presetName" placeholder="e.g. Sunday service"></label><button id="savePreset" class="btn btn-secondary">Save preset</button></div>
+<div class="preset-row"><label>Saved presets<select id="presetSelect"></select></label><button id="loadPreset" class="btn btn-secondary">Load</button><button id="deletePreset" class="btn btn-ghost">Delete</button></div>
+<div class="button-row"><button id="exportPresets" class="btn btn-ghost">Export presets</button><label class="btn btn-ghost file-button">Import presets<input id="importPresets" type="file" accept=".json,application/json"></label><button id="saveSettings" class="btn btn-ghost">Save settings</button></div>
+</section>
+<section class="panel library-panel">
+<div class="section-head"><div><p class="eyebrow">YOUR LIBRARY</p><h2>Favorites & recent</h2></div></div>
+<div class="tabs"><button class="tab active" data-tab="favorites">Favorites</button><button class="tab" data-tab="recent">Recent</button></div>
+<div id="savedList" class="saved-list"><p class="muted">No saved scriptures yet.</p></div>
+</section>
+</main>
+<footer>Built for offline use • OBS Browser Dock + Browser Source • Shortcuts: <kbd>Enter</kbd> search, <kbd>Space</kbd> GO LIVE, <kbd>Esc</kbd> CLEAR</footer>
+<script src="assets/app.js"></script>
+</body></html>

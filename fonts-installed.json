@@ -1,0 +1,188 @@
+{
+  "generated": "2026-11-07 07:26:40",
+  "source": "https://github.com/google/fonts",
+  "fonts": [
+    {
+      "family": "Anton",
+      "slug": "anton",
+      "filename": "anton.ttf",
+      "variable": false,
+      "weight": "400",
+      "source": "https://github.com/google/fonts/blob/main/ofl/anton/Anton-Regular.ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Bebas Neue",
+      "slug": "bebasneue",
+      "filename": "bebasneue.ttf",
+      "variable": false,
+      "weight": "400",
+      "source": "https://github.com/google/fonts/blob/main/ofl/bebasneue/BebasNeue-Regular.ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Cinzel",
+      "slug": "cinzel",
+      "filename": "cinzel.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/cinzel/Cinzel[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Dancing Script",
+      "slug": "dancingscript",
+      "filename": "dancingscript.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/dancingscript/DancingScript[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Inter",
+      "slug": "inter",
+      "filename": "inter.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/inter/Inter[opsz,wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Lato",
+      "slug": "lato",
+      "filename": "lato.ttf",
+      "variable": false,
+      "weight": "400",
+      "source": "https://github.com/google/fonts/blob/main/ofl/lato/Lato-Thin.ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "League Spartan",
+      "slug": "leaguespartan",
+      "filename": "leaguespartan.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/leaguespartan/LeagueSpartan[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Lobster",
+      "slug": "lobster",
+      "filename": "lobster.ttf",
+      "variable": false,
+      "weight": "400",
+      "source": "https://github.com/google/fonts/blob/main/ofl/lobster/Lobster-Regular.ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Merriweather",
+      "slug": "merriweather",
+      "filename": "merriweather.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/merriweather/Merriweather[opsz,wdth,wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Montserrat",
+      "slug": "montserrat",
+      "filename": "montserrat.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/montserrat/Montserrat[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Nunito",
+      "slug": "nunito",
+      "filename": "nunito.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/nunito/Nunito[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Open Sans",
+      "slug": "opensans",
+      "filename": "opensans.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/opensans/OpenSans[wdth,wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Oswald",
+      "slug": "oswald",
+      "filename": "oswald.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/oswald/Oswald[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Pacifico",
+      "slug": "pacifico",
+      "filename": "pacifico.ttf",
+      "variable": false,
+      "weight": "400",
+      "source": "https://github.com/google/fonts/blob/main/ofl/pacifico/Pacifico-Regular.ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Playfair Display",
+      "slug": "playfairdisplay",
+      "filename": "playfairdisplay.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/playfairdisplay/PlayfairDisplay[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Poppins",
+      "slug": "poppins",
+      "filename": "poppins.ttf",
+      "variable": false,
+      "weight": "400",
+      "source": "https://github.com/google/fonts/blob/main/ofl/poppins/Poppins-Thin.ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Quicksand",
+      "slug": "quicksand",
+      "filename": "quicksand.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/quicksand/Quicksand[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Raleway",
+      "slug": "raleway",
+      "filename": "raleway.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/raleway/Raleway[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Roboto",
+      "slug": "roboto",
+      "filename": "roboto.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/roboto/Roboto[wdth,wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    },
+    {
+      "family": "Source Sans 3",
+      "slug": "sourcesans3",
+      "filename": "sourcesans3.ttf",
+      "variable": true,
+      "weight": "100 900",
+      "source": "https://github.com/google/fonts/blob/main/ofl/sourcesans3/SourceSans3[wght].ttf",
+      "license": "SIL Open Font License (see assets/fonts/licenses)"
+    }
+  ],
+  "missing": [],
+  "note": "Arial Rounded MT Bold, Comic Sans MS, and Script MT Bold are proprietary/system fonts and are not redistributed."
+}
