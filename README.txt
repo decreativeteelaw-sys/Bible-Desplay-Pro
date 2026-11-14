@@ -4,3 +4,5 @@ so they work offline after setup. License notices are saved in licenses/.
 
 The proprietary Windows fonts Arial Rounded MT Bold, Comic Sans MS, and Script
 MT Bold are not bundled. They are used only if already installed on Windows.
+
+The app requires Python 3 & above to run the offline Server
